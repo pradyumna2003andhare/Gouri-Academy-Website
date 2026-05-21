@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Dashboard</title>
+
+  <link rel="stylesheet" href="/dashboard.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 🔷 Navbar -->
+  <nav class="navbar">
+
+    <h1>Gouri Academy</h1>
+
+    <ul>
+      <li><a href="/">Home</a></li>
+
+      <li><a href="/about">About</a></li>
+
+      <li><a href="/contact">Contact</a></li>
+
+      <!-- 🔷 Welcome Name -->
+      <li class="welcome-user">
+        Welcome, <%= username %> 👋
+      </li>
+
+      <li><a href="/login">Logout</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- 🔷 Hero Section -->
+  <section class="hero-section">
+
+    <h2>
+      Welcome,
+      <%= username %> 🎉
+    </h2>
+
+    <p>
+      Glad to have you at Gouri Academy.
+      Continue your preparation and achieve your goals.
+    </p>
+
+  </section>
+
+  <!-- 🔷 Dashboard Cards -->
+  <section class="dashboard-section">
+
+    <div class="dashboard-container">
+
+      <!-- Results -->
+      <div class="dashboard-card">
+
+        <h3>Results</h3>
+
+        <p>
+          Check your scores, rankings,
+          and track your academic progress.
+        </p>
+        <a href="/results">
+
+          <button>
+            View Results
+          </button>
+
+        </a>
+
+      </div>
+
+      <!-- Study Material -->
+      <div class="dashboard-card">
+
+        <h3>Study Material</h3>
+
+        <p>
+          Access notes, PDFs,
+          assignments and recorded lectures.
+        </p>
+        <a href="/materials">
+          <button>
+            Open Material
+          </button>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 🔷 Footer -->
+  <footer class="footer">
+
+    <p>
+      © <%= new Date().getFullYear() %>
+        Gouri Academy. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

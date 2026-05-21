@@ -1,0 +1,207 @@
+/* 🔷 Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔷 Body */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+/* 🔷 Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 50px;
+
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #cbd5e1;
+}
+
+/* 🔷 Welcome User */
+
+.welcome-user {
+  font-weight: 500;
+  color: #facc15;
+}
+
+/* 🔷 Hero Section */
+
+.hero-section {
+  text-align: center;
+
+  padding: 70px 20px;
+
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+
+  color: white;
+}
+
+.hero-section h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+
+  line-height: 1.6;
+}
+
+/* 🔷 Dashboard Section */
+
+.dashboard-section {
+  padding: 60px 40px;
+}
+
+/* 🔷 Dashboard Container */
+
+.dashboard-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 30px;
+}
+
+/* 🔷 Dashboard Cards */
+
+.dashboard-card {
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-card h3 {
+  font-size: 24px;
+
+  margin-bottom: 15px;
+
+  color: #1e3a8a;
+}
+
+.dashboard-card p {
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+
+  color: #555;
+}
+
+/* 🔷 Buttons */
+
+.dashboard-card button {
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.dashboard-card button:hover {
+  background-color: #1d4ed8;
+}
+
+/* 🔷 Footer */
+
+.footer {
+  text-align: center;
+
+  padding: 20px;
+
+  background-color: #1e3a8a;
+
+  color: white;
+
+  margin-top: 40px;
+}
+
+/* 🔷 Responsive */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-section h2 {
+    font-size: 32px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+}

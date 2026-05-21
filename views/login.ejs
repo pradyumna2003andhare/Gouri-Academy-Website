@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="/login.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+      <h1>Gouri Academy</h1>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About US</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  <form action="/login" method="POST" style="border:1px solid #ccc">
+
+    <div class="container">
+
+      <h1>Login</h1>
+      <p>Please enter your credentials to login.</p>
+
+      <hr>
+
+       <!-- Role Selection -->
+            <label for="role">
+                <b>Select Role</b>
+            </label>
+
+            <select name="role" required>
+
+                <option value="">
+                    -- Select Role --
+                </option>
+
+                <option value="student">
+                    Student
+                </option>
+
+                <option value="teacher">
+                    Teacher
+                </option>
+
+            </select>
+
+            <br><br>
+
+      <!-- Email -->
+      <label for="email"><b>Email</b></label>
+
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <!-- Password -->
+      <label for="password"><b>Password</b></label>
+
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <!-- Remember Me -->
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+        Remember me
+      </label>
+
+      <!-- Signup Link -->
+      <p class="signup-text">
+        Don't have an account?
+        <a href="/signup">Sign Up</a>
+      </p>
+
+      <!-- Buttons -->
+      <div class="clearfix">
+
+        <button type="submit" class="loginbtn">
+          Login
+        </button>
+
+      </div>
+
+    </div>
+
+  </form>
+
+</body>
+
+</html>

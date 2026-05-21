@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Dashboard</title>
+
+    <link rel="stylesheet" href="/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- 🔷 Navbar -->
+    <nav class="navbar">
+
+        <h1>Gouri Academy</h1>
+
+        <ul>
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/contact">Contact</a></li>
+
+            <!-- 🔷 Welcome Teacher -->
+            <li class="welcome-user">
+
+                Welcome,
+                <%= username %> 👨‍🏫
+
+            </li>
+
+            <li><a href="/login">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- 🔷 Hero Section -->
+    <section class="hero-section">
+
+        <h2>
+
+            Welcome,
+            <%= username %> 👨‍🏫
+
+        </h2>
+
+        <p>
+            Manage students, courses, tests and monitor
+            academic performance efficiently.
+        </p>
+
+    </section>
+
+    <!-- 🔷 Dashboard Cards -->
+    <section class="dashboard-section">
+
+        <div class="dashboard-container">
+
+            <!-- Upload Study Material -->
+            <div class="dashboard-card">
+
+                <h3>Upload Material</h3>
+
+                <p>
+                    Upload notes, assignments,
+                    PDFs and recorded lectures.
+                </p>
+
+                <!-- ✅ Fixed Upload Button -->
+                <a href="/upload">
+
+                    <button>
+                        Upload Files
+                    </button>
+
+                </a>
+
+            </div>
+
+            <!-- Add Student Marks -->
+            <div class="dashboard-card">
+
+                <h3>Add Student Marks</h3>
+
+                <p>
+                    Add marks and academic performance
+                    of students.
+                </p>
+
+                <a href="/addmarks">
+
+                    <button>
+                        Add Marks
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 🔷 Footer -->
+    <footer class="footer">
+
+        <p>
+
+            © <%= new Date().getFullYear() %>
+            Gouri Academy. All rights reserved.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

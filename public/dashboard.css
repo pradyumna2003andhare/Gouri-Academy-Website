@@ -1,0 +1,202 @@
+/* 🔷 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔷 Body */
+body {
+  background: #f1f5f9;
+  color: #333;
+}
+
+/* 🔷 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #1e3a8a;
+
+  padding: 18px 40px;
+
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 32px;
+}
+
+.navbar ul {
+  list-style: none;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+
+  color: white;
+
+  transition: 0.3s;
+
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  color: #93c5fd;
+}
+
+/* 🔷 Username */
+.welcome-user {
+  background: rgba(255,255,255,0.15);
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+/* 🔷 Hero Section */
+.hero-section {
+  text-align: center;
+
+  padding: 80px 20px;
+
+  background: linear-gradient(to right, #dbeafe, #f8fafc);
+}
+
+.hero-section h2 {
+  font-size: 42px;
+
+  color: #1e3a8a;
+
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 18px;
+
+  color: #555;
+}
+
+/* 🔷 Dashboard Section */
+.dashboard-section {
+  padding: 60px 20px;
+}
+
+/* 🔷 Container */
+.dashboard-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+/* 🔷 Cards */
+.dashboard-card {
+  background: white;
+
+  width: 260px;
+
+  padding: 30px 20px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+}
+
+.dashboard-card h3 {
+  color: #1e3a8a;
+
+  margin-bottom: 15px;
+
+  font-size: 24px;
+}
+
+.dashboard-card p {
+  color: #555;
+
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+/* 🔷 Buttons */
+.dashboard-card button {
+  background: #1e3a8a;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  font-size: 15px;
+}
+
+.dashboard-card button:hover {
+  background: #2563eb;
+}
+
+/* 🔷 Footer */
+.footer {
+  background: #1e3a8a;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 14px;
+
+  margin-top: 40px;
+
+  font-size: 14px;
+}
+
+/* 🔷 Responsive */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .hero-section h2 {
+    font-size: 32px;
+  }
+
+}

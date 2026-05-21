@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+
+    <link rel="stylesheet" href="/results.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>Gouri Academy</h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About US</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Student Results</h1>
+
+    <table border="1">
+
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+
+        <% results.forEach((result)=> { %>
+
+            <tr>
+
+                <td>
+                    <%= result.name %>
+                </td>
+
+                <td>
+                    <%= result.subject %>
+                </td>
+
+                <td>
+                    <%= result.marks %>
+                </td>
+
+            </tr>
+
+            <% }) %>
+
+    </table>
+
+</body>
+
+</html>

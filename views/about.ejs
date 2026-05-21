@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About - Gouri Academy</title>
+
+  <link rel="stylesheet" href="/about.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <!-- 🔷 Navbar -->
+  <nav class="navbar">
+
+    <h1>Gouri Academy</h1>
+
+    <ul>
+      <li><a href="/">Home</a></li>
+
+      <li><a href="/about">About</a></li>
+
+      <li><a href="/contact">Contact</a></li>
+
+      <li><a href="/signup">Signup/LogIn</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- 🔷 About Section -->
+  <section class="about-section">
+
+    <div class="about-container">
+
+      <!-- RIGHT TEXT -->
+      <div class="about-text">
+
+        <h2>About Gouri Academy</h2>
+
+        <p>
+          Gouri Academy is committed to providing high-quality education to students.
+          Our goal is to build strong academic foundations and help students achieve
+          excellence in their studies. With experienced faculty, structured learning,
+          and regular assessments, we ensure every student gets the attention they need.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 🔷 Mission & Vision -->
+  <section class="courses">
+
+    <h2>Our Mission & Vision</h2>
+
+    <div class="course-container">
+
+      <div class="course-card">
+
+        <h3>Our Mission</h3>
+
+        <p>
+          To provide quality education and empower students to succeed
+          in academics and life.
+        </p>
+
+      </div>
+
+      <div class="course-card">
+
+        <h3>Our Vision</h3>
+
+        <p>
+          To become one of the most trusted coaching institutes
+          known for excellence and results.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 🔷 Our Courses Section -->
+  <section class="courses">
+
+    <h2>Our Courses</h2>
+
+    <div class="course-container">
+
+      <!-- JEE -->
+      <div class="course-card">
+
+        <h3>JEE Preparation</h3>
+
+        <p>
+          Comprehensive coaching for JEE Main and Advanced with
+          expert guidance, mock tests, and concept-based learning.
+        </p>
+
+      </div>
+
+      <!-- NEET -->
+      <div class="course-card">
+
+        <h3>NEET Preparation</h3>
+
+        <p>
+          Specialized NEET coaching focused on Biology, Physics,
+          and Chemistry with regular practice and doubt solving.
+        </p>
+
+      </div>
+
+      <!-- MHT-CET -->
+      <div class="course-card">
+
+        <h3>MHT-CET</h3>
+
+        <p>
+          Dedicated preparation for MHT-CET examinations with
+          topic-wise tests and detailed performance analysis.
+        </p>
+
+      </div>
+
+      <!-- 10th Board -->
+      <div class="course-card">
+
+        <h3>10th State Board</h3>
+
+        <p>
+          Strong foundation courses for SSC Board students with
+          complete syllabus coverage and revision sessions.
+        </p>
+
+      </div>
+
+      <!-- 12th Board -->
+      <div class="course-card">
+
+        <h3>11th & 12th State Board</h3>
+
+        <p>
+          In-depth coaching for HSC Board students with exam-oriented
+          preparation and practical guidance.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 🔷 Faculty Section (Dynamic EJS) -->
+  <section class="courses">
+
+    <h2>Our Faculty</h2>
+
+    <div class="course-container">
+
+      <% if (typeof teachers !== "undefined") { %>
+
+        <% teachers.forEach(function(teacher) { %>
+
+          <div class="course-card">
+
+            <h3><%= teacher.name %></h3>
+
+            <p><%= teacher.subject %></p>
+
+          </div>
+
+        <% }) %>
+
+      <% } else { %>
+
+        <p>No faculty data available.</p>
+
+      <% } %>
+
+    </div>
+
+  </section>
+
+  <!-- 🔷 Footer -->
+  <footer class="footer">
+
+    <p>
+      © <%= new Date().getFullYear() %> Gouri Academy.
+      All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

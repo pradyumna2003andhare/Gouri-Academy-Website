@@ -1,0 +1,219 @@
+/* 🔹 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 Body */
+body {
+  background: #f1f5f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🔹 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #1e3a8a;
+
+  padding: 18px 40px;
+
+  color: white;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+  font-size: 28px;
+}
+
+.navbar ul {
+  list-style: none;
+
+  display: flex;
+
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #93c5fd;
+}
+
+/* 🔹 About Section */
+.about-section {
+  padding: 80px 20px;
+
+  background: linear-gradient(to right, #dbeafe, #f8fafc);
+}
+
+/* 🔹 About Container */
+.about-container {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* 🔹 About Text */
+.about-text h2 {
+  margin-bottom: 20px;
+
+  font-size: 38px;
+
+  color: #1e3a8a;
+}
+
+.about-text p {
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  color: #444;
+}
+
+/* 🔹 Common Section Styling */
+.courses {
+  margin: 50px auto;
+
+  width: 85%;
+
+  max-width: 1200px;
+
+  padding: 50px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+  text-align: center;
+}
+
+/* 🔹 Section Heading */
+.courses h2 {
+  font-size: 34px;
+
+  margin-bottom: 35px;
+
+  color: #1e3a8a;
+}
+
+/* 🔹 Card Container */
+.course-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+/* 🔹 Cards */
+.course-card {
+  background: #f8fafc;
+
+  padding: 30px 20px;
+
+  width: 280px;
+
+  border-radius: 14px;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* 🔹 Hover Effect */
+.course-card:hover {
+  transform: translateY(-10px);
+
+  background: #dbeafe;
+}
+
+/* 🔹 Card Heading */
+.course-card h3 {
+  margin-bottom: 15px;
+
+  color: #1e3a8a;
+
+  font-size: 24px;
+}
+
+/* 🔹 Card Text */
+.course-card p {
+  font-size: 15px;
+
+  color: #555;
+
+  line-height: 1.7;
+}
+
+/* 🔹 Footer */
+.footer {
+  background: #1e3a8a;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 25px;
+
+  margin-top: 50px;
+
+  font-size: 15px;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .courses {
+    width: 92%;
+
+    padding: 30px 20px;
+  }
+
+  .course-card {
+    width: 100%;
+  }
+
+}
